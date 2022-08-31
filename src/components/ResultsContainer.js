@@ -33,9 +33,9 @@ const ResultsContainer = () => {
         </h3>
       </Box>
       <Box className="results">
-        {results.map((q) => {
+        {results.map((q, index) => {
           return (
-            <Box display="flex">
+            <Box key={index} display="flex">
               <span>{q.correct ? <Add /> : <Remove />}</span>
               <span>{q.question}</span>
             </Box>

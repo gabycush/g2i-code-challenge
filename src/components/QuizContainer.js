@@ -20,7 +20,7 @@ const QuizContainer = () => {
 
   const answerQuestion = (value) => {
     const graded = {
-      question: he.decode(current.question),
+      question: current.question ? he.decode(current.question) : "",
       correct: value === current.correct_answer,
     };
 
@@ -36,7 +36,7 @@ const QuizContainer = () => {
 
       <Box className="box-md">
         <p className="question">
-          {isLoading ? "" : he.decode(current?.question)}
+          {isLoading && current?.question ? he.decode(current?.question) : ""}
         </p>
       </Box>
       <Box className="box-sm sub">
