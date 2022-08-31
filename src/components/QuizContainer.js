@@ -36,7 +36,7 @@ const QuizContainer = () => {
 
       <Box className="box-md">
         <p className="question">
-          {isLoading && current?.question ? he.decode(current?.question) : ""}
+          {!isLoading && current?.question ? he.decode(current?.question) : ""}
         </p>
       </Box>
       <Box className="box-sm sub">
