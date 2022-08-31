@@ -32,21 +32,23 @@ const QuizContainer = () => {
 
   return (
     <Container maxWidth="sm">
-      <Box>
+      <Box className="box-sm category">
         <h3>{isLoading ? "" : currentQ?.category}</h3>
       </Box>
 
-      <Box>
+      <Box className="box-md">
         {!quizComplete && (
-          <p>{isLoading ? "" : he.decode(currentQ.question)}</p>
+          <p className="question">
+            {isLoading ? "" : he.decode(currentQ.question)}
+          </p>
         )}
       </Box>
-      <Box>
+      <Box className="box-sm sub">
         <p>
           {qIndex} of {questionCount}
         </p>
       </Box>
-      <Box>
+      <Box className="box-sm button">
         <Box display="flex">
           <Button variant="contained" onClick={() => answerQuestion("True")}>
             {qIndex >= questionCount ? <Link to="/results">True</Link> : "True"}

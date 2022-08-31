@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
 import { Container } from "@mui/system";
 import Add from "@mui/icons-material/Add";
 import Remove from "@mui/icons-material/Remove";
@@ -25,13 +25,14 @@ const ResultsContainer = () => {
     dispatch(resetResults());
   };
   return (
-    <Container>
-      <Box>
+    <Container maxWidth="sm">
+      <Box className="box-sm title">
         <h3>
-          You Scored {calculateScore(results)}/{results.length}
+          You Scored <br />
+          {calculateScore(results)}/{results.length}
         </h3>
       </Box>
-      <Box>
+      <Box className="results">
         {results.map((q) => {
           return (
             <Box display="flex">
@@ -41,10 +42,8 @@ const ResultsContainer = () => {
           );
         })}
       </Box>
-      <Box>
-        <Button onClick={onResetQuiz}>
-          <Link to="/">PLAY AGAIN?</Link>
-        </Button>
+      <Box className="box-sm button" onClick={onResetQuiz}>
+        <Link to="/">PLAY AGAIN?</Link>
       </Box>
     </Container>
   );

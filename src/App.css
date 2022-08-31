@@ -1,3 +1,18 @@
-.App {
-  text-align: center;
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightgrey;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .App {
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+  }
+
+  .trivia-container {
+    width: 400px !important;
+  }
 }

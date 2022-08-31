@@ -1,0 +1,68 @@
+.box-sm {
+  width: 180px;
+  margin: auto;
+  text-align: center;
+}
+
+.box-md {
+  width: 280px;
+  margin: auto;
+  text-align: center;
+  height: 230px;
+  border: 1px solid #000000;
+  position: relative;
+}
+
+.title {
+  padding: 2px 0 4px;
+  height: 100px;
+}
+
+.category {
+  width: 90%;
+  height: 100px;
+}
+
+.main {
+  height: 200px;
+}
+
+.main p {
+  padding: 24px 0;
+}
+
+.sub {
+  height: 50px;
+  font-size: 12px;
+}
+
+.question {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+}
+
+.results span {
+  padding: 0 12px 12px 4px;
+}
+
+.button {
+  padding: 48px 0 16px;
+}
+
+.button button {
+  margin: 8px;
+  font-weight: 700;
+}
+
+button a {
+  color: white;
+}
+
+a {
+  color: #2e2c2c;
+  text-decoration: none;
+  font-weight: 700;
+}
