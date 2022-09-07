@@ -7,7 +7,7 @@ const QuizContainer = () => {
   return (
     <Container maxWidth="sm">
       <Box className="box-sm title">
-        <h3>Welcome to the Trivia Challenge</h3>
+        <h3>Welcome to the Trivia Challenge!</h3>
       </Box>
       <Box className="box-sm main">
         <p>You will be presented with 10 true or false questions.</p>

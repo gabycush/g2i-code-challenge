@@ -16,6 +16,7 @@
 .title {
   padding: 2px 0 4px;
   height: 100px;
+  position: relative;
 }
 
 .category {
@@ -42,6 +43,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 250px;
+}
+
+.results {
+  height: 350px;
+  overflow-y: scroll;
+  overflow-x: visible;
 }
 
 .results span {
