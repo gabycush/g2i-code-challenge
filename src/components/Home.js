@@ -3,21 +3,20 @@ import { Container, Box } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./Quiz.css";
 
-const QuizContainer = () => {
+const Home = () => {
   return (
     <Container maxWidth="sm">
       <Box className="box-sm title">
-        <h3>Welcome to the Trivia Challenge!</h3>
+        <h3>This is the Sweeet Home Page</h3>
       </Box>
       <Box className="box-sm main">
-        <p>You will be presented with 10 true or false questions.</p>
-        <p className="">Can you score 100%?</p>
+        <p>You like?</p>
       </Box>
       <Box className="box-sm button">
-        <Link to="/quiz">BEGIN</Link>
+        <Link to="/quiz">Go to dashboard page {`(for now)`}</Link>
       </Box>
     </Container>
   );
 };
 
-export default QuizContainer;
+export default Home;

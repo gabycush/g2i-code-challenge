@@ -1,9 +1,10 @@
 import { Container } from "@mui/material";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useSelector } from "react-redux";
-import QuizContainer from "./components/QuizContainer";
-import QuizWelcome from "./components/QuizWelcome";
-import ResultsContainer from "./components/ResultsContainer";
+import SubscriptionContainer from "./components/Subscription/SubscriptionContainer";
+import Dashboard from "./components/Dashboard";
+import Home from "./components/Home";
+import Pricing from "./components/Pricing";
 import "./App.css";
 import { Box } from "@mui/system";
 
@@ -25,12 +26,13 @@ function App() {
           }}
         >
           <Routes>
-            <Route path="/quiz" element={<QuizContainer />} />
+            <Route path="/quiz" element={<Dashboard />} />
             <Route
               path="/results"
-              element={<ResultsContainer results={isLoading ? results : []} />}
+              element={<Pricing results={isLoading ? results : []} />}
             />
-            <Route path="/" element={<QuizWelcome />} />
+            <Route path="/stripe" element={<SubscriptionContainer />} />
+            <Route path="/" element={<Home />} />
           </Routes>
         </Container>
       </Box>

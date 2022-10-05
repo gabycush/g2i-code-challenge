@@ -1,8 +1,11 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "https://opentdb.com/api.php?amount=10&difficulty=hard&type=boolean",
+  baseURL: "http://localhost:5000/create-checkout-session",
   headers: {
     "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, DELETE, UPDATE, PUT, OPTIONS",
+    // "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token",
   },
 });
